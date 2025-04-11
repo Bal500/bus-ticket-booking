@@ -1,0 +1,6 @@
+<div class="ticket-card">
+    <h3>{{ route.from }} - {{ route.to }}</h3>
+    <p>Indulás: {{ route.departureTime | date:'short' }}</p>
+    <p>Ár: {{ getPrice() | formatPrice }} Ft</p>
+    <mat-icon>local_offer</mat-icon>
+</div>

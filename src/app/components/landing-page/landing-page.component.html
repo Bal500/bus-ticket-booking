@@ -1,0 +1,17 @@
+<div class="landing-page">
+    <h1>Buszjegy Foglalás</h1>
+    <mat-form-field>
+        <mat-label>Honnan</mat-label>
+        <input matInput [(ngModel)]="from">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Hova</mat-label>
+        <input matInput [(ngModel)]="to">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Időpont</mat-label>
+        <input matInput [(ngModel)]="departureTime" type="datetime-local">
+    </mat-form-field>
+    <button mat-raised-button (click)="searchTickets()">Keresés</button>
+    <app-search-results [results]="results"></app-search-results>
+</div>
