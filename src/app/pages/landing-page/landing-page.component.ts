@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
-import { MatAutocompleteModule } from '@angular/material/autocomplete'; // Importáld az Autocomplete modult
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { SearchResultsComponent } from '../../components/search-results/search-results.component';
 import { Route } from '../../models/route';
 
@@ -17,7 +17,7 @@ import { Route } from '../../models/route';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    MatAutocompleteModule, // Importáld ide is
+    MatAutocompleteModule,
     SearchResultsComponent
   ],
   templateUrl: './landing-page.component.html',
@@ -29,7 +29,6 @@ export class LandingPageComponent {
   departureTime: string = '';
   results: Route[] = [];
 
-  // Városok listája az automatikus kiegészítéshez
   cities: string[] = ['Budapest', 'Debrecen', 'Szeged', 'Pécs', 'Miskolc', 'Győr', 'Sopron', 'Székesfehérvár', 'Kecskemét', 'Érd'];
 
   allRoutes: Route[] = [
@@ -116,7 +115,7 @@ export class LandingPageComponent {
   ];
 
   searchTickets() {
-    const selectedTime = new Date(this.departureTime).getTime(); // Választott időpont
+    const selectedTime = new Date(this.departureTime).getTime();
     this.results = this.allRoutes.filter(route =>
       route.from.toLowerCase().includes(this.from.toLowerCase()) &&
       route.to.toLowerCase().includes(this.to.toLowerCase()) &&
