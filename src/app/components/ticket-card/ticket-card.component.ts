@@ -17,6 +17,7 @@ import { Route } from '../../models/route';
       </mat-card-content>
     </mat-card>
   `,
+  styleUrls: ['./ticket-card.component.css']
 })
 export class TicketCardComponent {
     @Input() ticket!: Route;

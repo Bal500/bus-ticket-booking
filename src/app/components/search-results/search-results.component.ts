@@ -15,7 +15,7 @@ import { Route } from '../../models/route';
       <p>Nincs találat.</p>
     </ng-template>
   `,
-    styleUrls: ['./search-results.component.css']
+  styleUrls: ['./search-results.component.css']
 })
 export class SearchResultsComponent {
     @Input() results: Route[] = [];

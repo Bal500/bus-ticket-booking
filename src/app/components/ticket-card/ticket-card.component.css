@@ -1,0 +1,81 @@
+body {
+    background-color: #ffffff; /* Fehér háttér */
+    color: #333333; /* Sötétszürke szöveg */
+    font-family: 'Roboto', sans-serif; /* Modern betűtípus */
+    margin: 0;
+    padding: 0;
+}
+
+.landing-page {
+    max-width: 800px; /* Növelt szélesség */
+    margin: 50px auto; /* Középre igazítás */
+    padding: 40px; /* Növelt padding */
+    border-radius: 12px; /* Lekerekített sarkok */
+    background-color: #f5f5f5; /* Világosszürke háttér */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Árnyék */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px; /* Növelt térköz az alsó elem előtt */
+    font-size: 2.5rem; /* Növelt betűméret */
+    color: #3f51b5; /* Világoskék szín a címhez */
+}
+
+mat-form-field {
+    width: 100%; /* Kitölti a rendelkezésre álló helyet */
+    margin-bottom: 30px; /* Növelt térköz az alábbi elemek előtt */
+    height: 80px; /* Növelt magasság a mezőknek */
+}
+
+mat-label {
+    color: #3f51b5; /* Világoskék színű címkék */
+}
+
+input {
+    color: #333333; /* Sötétszürke szöveg a beviteli mezőkben */
+    background-color: #ffffff; /* Fehér háttér a beviteli mezőkben */
+    height: 80px; /* Növelt magasság */
+    font-size: 1.5rem; /* Növelt betűméret */
+}
+
+button {
+    background-color: #3f51b5; /* Világoskék gomb */
+    color: #ffffff; /* Fehér szöveg a gombon */
+    width: 100%; /* Kitölti a rendelkezésre álló helyet */
+    margin-top: 30px; /* Növelt térköz a gomb előtt */
+    height: 64px; /* Növelt magasság */
+    font-size: 1.5rem; /* Növelt betűméret */
+}
+
+button:hover {
+    background-color: #303f9f; /* Sötétebb kék a hover effektushoz */
+}
+
+.results-list {
+    margin-top: 40px; /* Térköz a keresési eredmények előtt */
+}
+
+.ticket-card {
+    background-color: #ffffff; /* Fehér háttér a kártyákhoz */
+    border-radius: 8px; /* Lekerekített sarkok */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Árnyék a kártyákhoz */
+    margin: 20px 0; /* Térköz a kártyák előtt és után */
+    padding: 30px; /* Növelt padding a kártyákban */
+    font-size: 1.5rem; /* Növelt betűméret a kártyákon */
+    width: calc(100% - 40px); /* Szélesség beállítása a kártyákhoz */
+}
+
+.ticket-card h3 {
+    margin: 0 0 10px; /* Térköz a kártya címénél */
+    font-size: 2rem; /* Kártya cím betűméret */
+}
+
+.ticket-card p {
+    margin: 5px 0; /* Térköz eltávolítása a kártya szövegénél */
+}
+
+mat-icon {
+    vertical-align: middle; /* Igazítás a szöveggel */
+    margin-left: 10px; /* Térköz az ikon előtt */
+}

@@ -1,3 +1,92 @@
-.search-results {
-    margin: 20px 0;
+:host {
+    display: block;
+    padding: 2rem;
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #222;
+}
+
+.search-fields {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+}
+
+.search-fields input[type="text"],
+.search-fields input[type="datetime-local"] {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    flex: 1;
+}
+
+.search-fields button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.search-fields button:hover {
+    background-color: #0056b3;
+}
+
+.bus-card {
+    background-color: #f9fafc;
+    border: 1px solid #e0e0e0;
+    padding: 1.25rem 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.2s ease;
+}
+
+.bus-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+}
+
+.bus-card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #007bff;
+}
+
+.bus-card p {
+    margin: 0.25rem 0;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ticket-icon {
+    font-size: 1.2rem;
+}
+
+.results-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }

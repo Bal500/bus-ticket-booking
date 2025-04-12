@@ -1,17 +1,28 @@
 <div class="landing-page">
     <h1>Buszjegy Foglalás</h1>
-    <mat-form-field>
+
+    <mat-form-field appearance="fill">
         <mat-label>Honnan</mat-label>
-        <input matInput [(ngModel)]="from">
+        <input matInput [(ngModel)]="from" [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let city of cities" [value]="city">{{ city }}</mat-option>
+        </mat-autocomplete>
     </mat-form-field>
-    <mat-form-field>
+
+    <mat-form-field appearance="fill">
         <mat-label>Hova</mat-label>
-        <input matInput [(ngModel)]="to">
+        <input matInput [(ngModel)]="to" [matAutocomplete]="autoTo">
+        <mat-autocomplete #autoTo="matAutocomplete">
+            <mat-option *ngFor="let city of cities" [value]="city">{{ city }}</mat-option>
+        </mat-autocomplete>
     </mat-form-field>
-    <mat-form-field>
+
+    <mat-form-field appearance="fill">
         <mat-label>Időpont</mat-label>
         <input matInput [(ngModel)]="departureTime" type="datetime-local">
     </mat-form-field>
-    <button mat-raised-button (click)="searchTickets()">Keresés</button>
+
+    <button mat-raised-button color="primary" (click)="searchTickets()">Keresés</button>
+
     <app-search-results [results]="results"></app-search-results>
 </div>
