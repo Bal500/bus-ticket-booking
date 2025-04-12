@@ -1,0 +1,6 @@
+<div *ngIf="results.length > 0; else noResults">
+    <app-ticket-card *ngFor="let result of results" [ticket]="result"></app-ticket-card>
+</div>
+<ng-template #noResults>
+    <p>Nincs találat.</p>
+</ng-template>

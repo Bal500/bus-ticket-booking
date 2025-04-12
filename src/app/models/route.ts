@@ -1,5 +1,7 @@
-export interface interface Route {
+export interface Route {
+    id: number;
     from: string;
     to: string;
-    departureTime: Date;
+    departure: string; // ISO formátumú dátum + idő
+    price: number; // ár
 }
