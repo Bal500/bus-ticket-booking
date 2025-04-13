@@ -4,4 +4,5 @@ export interface Route {
     to: string;
     departure: string;
     price: number;
+    seats: number;
 }

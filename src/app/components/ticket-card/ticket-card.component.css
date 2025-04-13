@@ -79,3 +79,10 @@ mat-icon {
     vertical-align: middle;
     margin-left: 10px;
 }
+
+.ticket-card button {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    height: 50px;
+    width: 100%;
+}

@@ -1,10 +1,14 @@
-<br>
 <div class="results-list">
-    <div class="ticket-card">
+    <div class="ticket-card" *ngFor="let route of results">
         <h3>{{ route.from }} - {{ route.to }}</h3>
         <p>Indulás: {{ route.departureTime | date:'short' }}</p>
-        <p>Ár: {{ getPrice() | formatPrice }} Ft</p>
+        <p>Ár: {{ route.price | formatPrice }} Ft</p>
+        <p>Elérhető helyek: {{ route.seats }}</p>
+
+        <button mat-raised-button color="primary" (click)="reserveSeat(route)" [disabled]="route.seats <= 0">
+            Lefoglalás
+        </button>
+
         <mat-icon>local_offer</mat-icon>
     </div>
 </div>
-<br>
