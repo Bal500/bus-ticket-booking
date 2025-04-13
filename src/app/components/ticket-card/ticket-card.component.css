@@ -86,3 +86,9 @@ mat-icon {
     height: 50px;
     width: 100%;
 }
+
+.disabled-button {
+    background-color: #cccccc !important;
+    color: #666666 !important;
+    cursor: not-allowed;
+}

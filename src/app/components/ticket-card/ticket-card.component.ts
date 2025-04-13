@@ -17,9 +17,10 @@ import * as QRCode from 'qrcode';
         <p>Ár: {{ ticket.price }} Ft <mat-icon>confirmation_number</mat-icon></p>
         <p>Elérhető helyek: {{ ticket.seats }}</p>
       </mat-card-content>
-      <button mat-raised-button color="primary" (click)="reserveSeat(ticket)" [disabled]="ticket.seats <= 0">
+      <button mat-raised-button color="primary" (click)="reserveSeat(ticket)" [disabled]="ticket.seats <= 0" [ngClass]="{ 'disabled-button': ticket.seats <= 0 }">
         Lefoglalás
       </button>
+
     </mat-card>
   `,
   styleUrls: ['./ticket-card.component.css']

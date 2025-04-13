@@ -1,7 +1,9 @@
 <div class="ticket-container">
     <h2>Jegy azonosító: {{ ticketId }}</h2>
-    <div *ngIf="qrCodeUrl">
+    @if (qrCodeUrl) {
+    <div>
         <img [src]="qrCodeUrl" alt="QR kód" />
     </div>
+    }
     <button (click)="downloadTicket()" class="download-btn">Jegy letöltése</button>
 </div>
