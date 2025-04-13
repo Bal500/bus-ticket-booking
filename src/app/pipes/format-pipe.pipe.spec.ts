@@ -1,8 +1,8 @@
-import { FormatPipePipe } from './format-pipe.pipe';
+import { FormatPricePipe } from './format-pipe.pipe';
 
-describe('FormatPipePipe', () => {
+describe('FormatPricePipe', () => {
   it('create an instance', () => {
-    const pipe = new FormatPipePipe();
+    const pipe = new FormatPricePipe();
     expect(pipe).toBeTruthy();
   });
 });
