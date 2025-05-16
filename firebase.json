@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/bus-ticket-booking",
+    "public": "dist/bus-ticket-booking/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
